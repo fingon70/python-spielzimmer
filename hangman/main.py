@@ -13,7 +13,7 @@ cls()
 
 word_to_guess = random.choice(hangman_words.word_list_red_light)
 
-print(f'Word to guess: {word_to_guess}')
+# print(f'Word to guess: {word_to_guess}')
 
 word_length = len(word_to_guess)
 
@@ -26,6 +26,7 @@ max_errors = len(hangman_art.stages) - 1
 errors = max_errors
 
 while not end_of_game:
+    #
     print(display)
     guessed = input('Your char: ').upper()
 
